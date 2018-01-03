@@ -19,7 +19,7 @@
 <html ng-app="app" ng-csp>
 <head>
   <meta charset="utf-8">
-  <title>Waves Lite Client</title>
+  <title>Cryptowave Lite Client</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/waves-lite-client-styles-0.5.14.css">
 
@@ -232,7 +232,7 @@
 
   <!-- HEADER -->
   <header class="fFade noSelect" ng-controller="mainMenuController as menu">
-    <img id="topLogoH" src="img/topleftlogo_hor.svg" alt="Waves platform logo horizontal" />
+    <img id="topLogoH" src="img/topleftlogo_hor.svg" alt="Cryptowave platform logo horizontal" />
     <div id="logoNversion2">
       <img src="img/topleftlogo.svg" />
       <p ng-class='{testnet: isTestnet()}'>{{::home.title}} <span class="wlcversion">{{::home.version}}</span></p>
@@ -306,7 +306,7 @@
                 <td><input class="wInput form-control" name="aliasName" type="text" placeholder="Symbolic name" ng-model="create.alias"/></td>
               </tr>
               <tr>
-                <td>Waves fee</td>
+                <td>Cryptowave fee</td>
                 <td>{{::create.fee.formatAmount(true)}} {{::create.fee.currency.displayName}}</td>
               </tr>
               </tbody>
@@ -505,7 +505,7 @@
                     <td><input class="wInput form-control" name="withdrawTotal" type="text" placeholder="Total amount" ng-model="withdraw.total" ng-change="withdraw.refreshAmount()" decimal-input-restrictor/></td>
                   </tr>
                   <tr>
-                    <td class="padded">Waves fee</td>
+                    <td class="padded">Cryptowave fee</td>
                     <td class="padded">
                       <md-autocomplete md-input-name="withdrawFee" md-selected-item="withdraw.autocomplete.selectedFee" md-search-text="withdraw.autocomplete.searchText"
                                        md-items="item in withdraw.autocomplete.querySearch(withdraw.autocomplete.searchText)"
